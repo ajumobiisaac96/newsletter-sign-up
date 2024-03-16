@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.newsletter-background{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 30px;
+    /* display: none; */
+}
+
+.newsletter-info{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  padding-left: 30px;
+  padding-right:30px ;
+}
+
+.last-list{
+    padding-bottom: 30px;
+}
+
+.newsletter-info h1{
+    color: hsl(234, 29%, 20%);
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.newsletter-info p{
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.update-list{
+    display: flex;
+    align-content: space-between;
+}
+
+.update-list p{
+    padding: 10px;
+}
+
+.input-mail input{
+    width: 100%;
+    padding: 5px;   
+    margin-top:5px;
+    margin-bottom:20px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.input-mail label{  
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.error{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+#error-message{
+    font-size: 10px;
+    color: red;
+    font-weight: 700;
+    position: absolute;
+    right: 60%;
+    display: none;
+}
+
+#btn{
+    width: 100%;
+    padding: 5px;
+    margin-top:2px;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+}
+
+.thank-you{
+    background-color: hsl(0, 0%, 100%);
+    padding:40px;
+    width: 340px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.thank-you img{
+    width: 45px;
+    margin-bottom: 20px;
+}
+
+.thank-you h1{
+    color:hsl(235, 18%, 26%);
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.thank-you p{
+    font-size: 12px;
+}
+
+.thank-you button{
+    width: 100%;
+    padding: 5px;
+    margin-top:25px;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+}
+
+#my-mail{
+    color:hsl(235, 18%, 26%);
+    font-weight: 700;
+}

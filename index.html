@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="newsletter-background">
+    <div class="newsletter-info">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product mangers receiving monthly updates on: </p>
+      <div class="update-list">
+        <img src="./assets/images/icon-list.svg" alt="">
+        <p>product discovery and building what matters</p>
+      </div>
+      <div class="update-list">
+        <img src="./assets/images/icon-list.svg" alt="">
+        <p>measuring to ensure updates are a success</p>
+      </div>
+      <div class="update-list last-list">
+        <img src="./assets/images/icon-list.svg" alt="">
+        <p>And much more</p>
+      </div>
+
+      <form action="">
+        <div class="input-mail">
+          <div class="error">
+            <label for="input-error"> Email address</label>
+            <p><span id="error-message">Valid email required</span></p> <br>
+          </div>
+          
+          <input id="input-error" type="email" placeholder="email@company.com" required>
+        </div>
+        <button id="btn" onclick="subscribe()" >Subscribe to monthly newsletter</button>
+      </form>
+      </div>
+      
+
+    <div class="newsletter-image">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+    </div>
+  </main>
+
+  <div class="thank-you">
+    <img src="./assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation mail has been sent to <span id="my-mail">ash@loremcompany.com</span>. Please open it and and click the button inside to confirm your subscription </p>
+    <button onclick="dismissMessage()" >Dismiss message</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
